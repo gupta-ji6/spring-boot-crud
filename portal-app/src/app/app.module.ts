@@ -4,8 +4,10 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
+import {MentorComponent} from './mentor/mentor.component';
 import { AppRoutingModule } from './app.routing.module';
 import {UserService} from './user/user.service';
+import {MentorService} from './mentor/mentor.service';
 import {HttpClientModule} from "@angular/common/http";
 import {AddUserComponent} from './user/add-user.component';
 
@@ -13,6 +15,7 @@ import {AddUserComponent} from './user/add-user.component';
   declarations: [
     AppComponent,
     UserComponent,
+    MentorComponent,
     AddUserComponent
   ],
   imports: [
@@ -21,7 +24,7 @@ import {AddUserComponent} from './user/add-user.component';
     HttpClientModule,
     FormsModule
   ],
-  providers: [UserService],
+  providers: [UserService, MentorService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,36 @@
+<div class="col-md-6">
+    <h2> Mentor Details</h2>
+    
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th class="hidden">Id</th>
+        <th>Id</th>
+        <th>Email</th>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>Reg Code</th>
+        <th>Role</th>
+        <th>LinkedIn URL</th>
+        <th>Active</th>
+        <th>Years Of Experience</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let mentor of mentors">
+        <td class="hidden">{{mentor.id}}</td>
+        <td>{{mentor.id}}</td>
+        <td>{{mentor.userName}}</td>
+        <td>{{mentor.firstName}}</td>
+        <td>{{mentor.lastName}}</td>
+        <td>{{mentor.regCode}}</td>
+        <td>{{mentor.role}}</td>
+        <td>{{mentor.linkedinUrl}}</td>
+        <td>{{mentor.active}}</td>
+        <td>{{mentor.yearsOfExperience}}</td>
+        <td><button class="btn btn-danger" (click)="deleteMentor(mentor)"> Delete mentor</button></td>
+      </tr>
+      </tbody>
+    </table>
+    </div>
+    

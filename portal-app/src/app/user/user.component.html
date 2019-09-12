@@ -5,18 +5,35 @@
   <thead>
   <tr>
     <th class="hidden">Id</th>
+    <th>Id</th>
     <th>FirstName</th>
     <th>LastName</th>
     <th>Email</th>
-    <th>Action</th>
+    <th>Reg Code</th>
+    <th>Role</th>
+    <th>LinkedIn URL</th>
+    <th>Years Of Experience</th>
+    <th>Active</th>
+    <th>Confirmed Sign Up</th>
+    <th>Reset Password</th>
+    <th>Reset Password Date</th>
   </tr>
   </thead>
   <tbody>
   <tr *ngFor="let user of users">
     <td class="hidden">{{user.id}}</td>
+    <td>{{user.id}}</td>
     <td>{{user.firstName}}</td>
     <td>{{user.lastName}}</td>
-    <td>{{user.email}}</td>
+    <td>{{user.userName}}</td>
+    <td>{{user.regCode}}</td>
+    <td>{{user.role}}</td>
+    <td>{{user.linkedinUrl}}</td>
+    <td>{{user.active}}</td>
+    <td>{{user.confirmedSignUp}}</td>
+    <td>{{user.yearsOfExperience}}</td>
+    <td>{{user.resetPassword}}</td>
+    <td>{{user.resetPasswordDate}}</td>
     <td><button class="btn btn-danger" (click)="deleteUser(user)"> Delete User</button></td>
   </tr>
   </tbody>
