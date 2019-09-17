@@ -1,0 +1,26 @@
+<div class="col-md-6">
+  <h2> Skill Details</h2>
+  
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th class="hidden">Id</th>
+      <th>Id</th>
+      <th>Name</th>
+      <th>TOC</th>
+      <th>Prerequisites</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let skill of skills">
+      <td class="hidden">{{skill.id}}</td>
+      <td>{{skill.id}}</td>
+      <td>{{skill.name}}</td>
+      <td>{{skill.toc}}</td>
+      <td>{{skill.prerequisites}}</td>
+      <td><button class="btn btn-danger" (click)="deleteSkill(skill)"> Delete skill</button></td>
+    </tr>
+    </tbody>
+  </table>
+  </div>
+  

@@ -1,0 +1,110 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add Mentor</h2>
+  <form>
+    <div class="form-group">
+      <label for="userName">Email:</label>
+      <input
+        type="email"
+        [(ngModel)]="mentor.userName"
+        placeholder="Email"
+        name="userName"
+        class="form-control"
+        id="userName"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        [(ngModel)]="mentor.password"
+        placeholder="Password"
+        name="password"
+        class="form-control"
+        id="password"
+      />
+    </div>
+
+
+    <div class="form-group">
+      <label for="firstName">First Name:</label>
+      <input
+        [(ngModel)]="mentor.firstName"
+        placeholder="First Name"
+        name="firstName"
+        class="form-control"
+        id="firstName"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="lastName">Last Name:</label>
+      <input
+        [(ngModel)]="mentor.lastName"
+        placeholder="Last name"
+        name="lastName"
+        class="form-control"
+        id="lastName"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="contactNumber">Contact Number:</label>
+      <input
+        [(ngModel)]="mentor.contactNumber"
+        placeholder="Contact Number"
+        name="contactNumber"
+        class="form-control"
+        id="contactNumber"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="regCode">Reg Code:</label>
+      <input
+        [(ngModel)]="mentor.regCode"
+        placeholder="Reg Code"
+        name="regCode"
+        class="form-control"
+        id="regCode"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="role">Role:</label>
+      <input
+        [(ngModel)]="mentor.role"
+        placeholder="role"
+        name="role"
+        class="form-control"
+        id="role"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="linkedinUrl">Linkedin Url:</label>
+      <input
+        type="url"
+        [(ngModel)]="mentor.linkedinUrl"
+        placeholder="Linkedin URL"
+        name="linkedinUrl"
+        class="form-control"
+        id="linkedinUrl"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="yearsOfExperience">Years Of Experience:</label>
+      <input
+        type="number"
+        [(ngModel)]="mentor.yearsOfExperience"
+        placeholder="Years Of Experience"
+        name="yearsOfExperience"
+        class="form-control"
+        id="yearsOfExperience"
+      />
+    </div>
+
+    <button class="btn btn-success" (click)="createMentor()">Create</button>
+  </form>
+</div>
